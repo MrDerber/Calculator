@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_3">
+
+
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:textSize="24sp"
+        android:text="@string/settings_menu_name"
+        android:background="@color/black_shade_3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_back"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black_shade_3"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back"
+        tools:srcCompat="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:id="@+id/resultPanelSettingsContainer"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48sp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSettings"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/menuPoint1View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/resultPanelSettingsText"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/resultPanelSettingsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/resultPanelSettingsEnum"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formatResultContainer"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24sp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultPanelSettingsContainer"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/formatResultViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/formatResultViewName"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/formatResultViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/formatResultViewDescription"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
